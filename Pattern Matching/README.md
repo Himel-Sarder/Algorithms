@@ -143,10 +143,8 @@ void rabinKarpSearch(const string& text, const string& pattern) {
 
 - **`oldCharValue`**: ASCII value of the character leaving the window.
 - **`newCharValue`**: ASCII value of the character entering the window.
-- **Rolling Hash Update**:
-  1. Subtract the contribution of the old character: \( \text{textHash} -= \text{oldCharValue} \).
-  2. Shift the hash by dividing by the prime: \( \text{textHash} /= \text{prime} \).
-  3. Add the contribution of the new character: \( \text{textHash} += \text{newCharValue} \cdot \text{prime}^{(m-1)} \).
+![image](https://github.com/user-attachments/assets/0b60a30b-e281-4cd0-9602-6165f74d00e3)
+
 - **Example**:
   - For `text = "ababcabcabababd"`, at `i = 0`:
     - `oldCharValue = 'a'`, `newCharValue = 'c'`.
