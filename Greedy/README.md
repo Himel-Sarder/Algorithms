@@ -145,11 +145,3 @@ int main() {
   ```
 
 ---
-
-### **Key Points**
-1. **Greedy Strategy**: Always picks the highest-profit job first.
-2. **Slot Allocation**: Places each job in the latest available slot before its deadline.
-3. **Time Complexity**: 
-   - Sorting: \(O(n \log n)\)
-   - Scheduling: \(O(n \cdot d)\), where \(d\) is the maximum deadline.
-4. **Space Complexity**: \(O(d)\) for the schedule array.
